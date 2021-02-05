@@ -1,0 +1,7 @@
+<div class="image-container">
+  <div class="cover-image image-cristalized" [ngStyle]="{'clip-path' : 'inset( ' + cristalizedClip + '% 0 0 0)'}"></div>
+  <div class="cover-image image-clear" [ngStyle]="{'clip-path' : 'inset( 0 0 ' + clearClip + '% 0)'}"></div>
+  <div class="cover-image image-mask" [ngStyle]="{'clip-path' : 'inset( ' + pointMaskClip + '% 0 0 0)'}"></div>
+  <div class="cover-image image-vectormask" [ngStyle]="{'clip-path' : 'inset( 0 0 ' + vectorMaskClip + '% 0)'}"></div>
+  <div class="scanner" [ngStyle]="{'margin-top' : 'calc((min(70.87vw, 343px)/100)*' + scannerPos +')', 'opacity': scannerOpacity}"></div>
+</div>

@@ -1,0 +1,7 @@
+<div *ngFor="let window of windows">
+  <app-desktop-window label="{{ window.label }}">
+    <div [ngSwitch]="window?.code">
+      <app-identity-content *ngSwitchCase="'account_box'"></app-identity-content>
+    </div>
+  </app-desktop-window>
+</div>

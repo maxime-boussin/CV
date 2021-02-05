@@ -1,0 +1,18 @@
+button{
+  color: #bbbbbb;
+  width: 100px;
+  height: 100px;
+  margin-right: 30px;
+}
+.icon-label{
+  display: flex;
+  justify-content: center;
+}
+button:focus{
+  outline: none;
+}
+.mat-icon{
+  transform: scale(3);
+  margin-top: 25px;
+  margin-bottom: 10px;
+}

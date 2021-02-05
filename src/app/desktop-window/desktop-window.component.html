@@ -1,0 +1,7 @@
+<div class="box" cdkDragBoundary="body" cdkDrag [hidden]="!showBox">
+  <div class="box-header" cdkDragHandle>
+    {{ label }}
+    <button class="close-button" (click)="close()"><mat-icon aria-hidden="false">close</mat-icon></button>
+  </div>
+  <ng-content></ng-content>
+</div>

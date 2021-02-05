@@ -1,0 +1,43 @@
+.image-container {
+  background-image: url("../../assets/profile/pixelate_pict2.png");
+  margin: 15px;
+}
+
+.image-container, .cover-image {
+  background-size: cover;
+  width:  50vw;
+  height: 70.87vw;
+  max-width:242px;
+  max-height: 343px;
+  border-radius: 10px;
+}
+
+.cover-image {
+  position: absolute;
+}
+
+.image-cristalized {
+  background-image: url("../../assets/profile/pixelate_pict3.png");
+}
+
+.image-clear {
+  background-image: url("../../assets/profile/clear_pict.png");
+}
+
+.image-mask {
+  background-image: url("../../assets/profile/points_mask.png");
+}
+
+.image-vectormask {
+  background-image: url("../../assets/profile/vector_mask.png");
+}
+
+.scanner {
+  position: absolute;
+  width:  50vw;
+  max-width:242px;
+  height: 2px;
+  box-shadow: 0 1px 10px #29f624, 0 -1px 10px #29f624, 0 2px 10px #29f624, 0 -2px 10px #29f624;
+  background-color: #29f624;
+  transition: 35ms linear;
+}

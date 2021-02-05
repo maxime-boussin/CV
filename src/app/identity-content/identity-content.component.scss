@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
+#identityInformations td{
+  text-align: left;
+  padding: 5px;
+  width: 180px;
+}
+.identityLabel{
+  font-family: 'Goldman', monospace;
+  font-weight: normal;
+  font-size: medium;
+  color: rgba(187, 187, 187, 1);
+}
+@media (max-width: 700px){
+  .mainPart {
+    display: block;
+  }
+}
