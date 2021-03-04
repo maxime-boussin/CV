@@ -119,12 +119,12 @@ h1{
 .progress-bar2 {
   height: 18px;
   border-radius: 30px;
-  transition: 0.4s linear;
+  transition: 0.2s linear;
   transition-property: width, background-color;
 }
 
 .progress-moved .progress-bar2 {
-  animation: progress 8s 1;
+  animation: progress 4s 1;
 }
 
 @keyframes progress {

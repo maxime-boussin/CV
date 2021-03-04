@@ -36,6 +36,6 @@ export class LoadingscreenComponent implements OnInit{
       setTimeout(() => {
           this.statePower = '2';
           }, 200);
-      }, 123);
+      }, 4000);
   }
 }
