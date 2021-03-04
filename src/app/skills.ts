@@ -15,6 +15,7 @@ export const SKILLS: Skill[] = [
             name: 'Symfony',
             children: [
               {name: 'API Platform'},
+              {name: 'Swagger'},
               {name: 'GuzzleHTTP'}]
           },
           {
@@ -138,6 +139,7 @@ export const SKILLS: Skill[] = [
           {name: 'GitLab'},
           {name: 'GitHub'},
           {name: 'Jenkins'},
+          {name: 'SquashTest'}
         ]
       },
       {

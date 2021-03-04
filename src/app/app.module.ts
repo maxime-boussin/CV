@@ -25,6 +25,8 @@ import {MatTreeModule} from '@angular/material/tree';
 import { ProjectsContentComponent } from './projects-content/projects-content.component';
 import {HttpClientModule} from '@angular/common/http';
 import {GithubService} from './github.service';
+import { InfoContentComponent } from './info-content/info-content.component';
+import {MatMenuModule} from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,8 @@ import {GithubService} from './github.service';
     ExperiencesItemComponent,
     ScrambleTextComponent,
     SkillsContentComponent,
-    ProjectsContentComponent
+    ProjectsContentComponent,
+    InfoContentComponent
   ],
   imports: [
     BrowserModule,
@@ -53,7 +56,8 @@ import {GithubService} from './github.service';
     MDBBootstrapModule,
     CommonModule,
     MatTabsModule,
-    MatTreeModule
+    MatTreeModule,
+    MatMenuModule
   ],
   providers: [DatePipe, WindowsManagerComponent, GithubService],
   bootstrap: [AppComponent]

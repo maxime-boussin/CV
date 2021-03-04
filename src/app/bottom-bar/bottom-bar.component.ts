@@ -18,5 +18,4 @@ export class BottomBarComponent implements OnInit {
       }, 1000
     );
   }
-
 }

@@ -1,7 +1,15 @@
 <nav class="navbar fixed-bottom navbar-dark">
-  <button class="navbar-toggler mr-auto" type="button" aria-label="Menu">
+  <button class="navbar-toggler mr-auto" type="button" aria-label="Menu" [matMenuTriggerFor]="aboveMenu">
     <span class="navbar-toggler-icon"></span>
   </button>
+  <mat-menu #aboveMenu="matMenu" yPosition="above">
+    <a href="../../assets/CV.pdf" download="cv-maxime-boussin.pdf">
+    <button mat-menu-item>
+      <mat-icon aria-hidden="false">picture_as_pdf</mat-icon>
+      Télécharger CV
+    </button>
+    </a>
+  </mat-menu>
   <span class="navbar-text">
     <mat-icon aria-hidden="false">volume_up</mat-icon>
   </span>
