@@ -1,0 +1,37 @@
+table {
+  text-align: left;
+  margin: 0 10%;
+  width: 80%;
+  color: #bbbbbb;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+td {
+  padding: 5px;
+}
+.brand {
+  width: 25%;
+}
+
+.exp-logo {
+  background-size: cover;
+  width: 100%;
+  padding-top: 100%;
+  position: relative;
+  border-radius: 10px;
+}
+.details {
+  display: flex;
+  align-items: center;
+  margin: 15px;
+}
+mat-icon {
+  margin-right: 10px;
+}
+.divider {
+  height: 2px;
+  background-image: radial-gradient(rgba(200, 200, 200, 1), transparent 80%);
+  margin: 15px 0;
+}
+p {
+  margin: 0;
+}

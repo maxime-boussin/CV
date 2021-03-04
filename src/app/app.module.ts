@@ -14,6 +14,17 @@ import { WindowsManagerComponent } from './windows-manager/windows-manager.compo
 import { IdentityContentComponent } from './identity-content/identity-content.component';
 import { IdentityPictureComponent } from './identity-picture/identity-picture.component';
 import { HackerTextComponent } from './hacker-text/hacker-text.component';
+import { ExperiencesContentComponent } from './experiences-content/experiences-content.component';
+import { ExperiencesItemComponent } from './experiences-item/experiences-item.component';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { ScrambleTextComponent } from './scramble-text/scramble-text.component';
+import { CommonModule } from '@angular/common';
+import { SkillsContentComponent } from './skills-content/skills-content.component';
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatTreeModule} from '@angular/material/tree';
+import { ProjectsContentComponent } from './projects-content/projects-content.component';
+import {HttpClientModule} from '@angular/common/http';
+import {GithubService} from './github.service';
 
 @NgModule({
   declarations: [
@@ -25,16 +36,26 @@ import { HackerTextComponent } from './hacker-text/hacker-text.component';
     WindowsManagerComponent,
     IdentityContentComponent,
     IdentityPictureComponent,
-    HackerTextComponent
+    HackerTextComponent,
+    ExperiencesContentComponent,
+    ExperiencesItemComponent,
+    ScrambleTextComponent,
+    SkillsContentComponent,
+    ProjectsContentComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     MatIconModule,
     MatButtonModule,
-    DragDropModule
+    DragDropModule,
+    MDBBootstrapModule,
+    CommonModule,
+    MatTabsModule,
+    MatTreeModule
   ],
-  providers: [DatePipe, WindowsManagerComponent],
+  providers: [DatePipe, WindowsManagerComponent, GithubService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

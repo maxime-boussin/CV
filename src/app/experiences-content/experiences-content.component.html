@@ -1,0 +1,8 @@
+<div class="title"><app-scramble-text text="{{ title }}"></app-scramble-text></div>
+<div class="slider">
+  <mdb-carousel [interval]="0" [animation]="'slide'" (activeSlideChange)="onActiveSlideChange($event)">
+    <mdb-carousel-item *ngFor="let experience of experiences">
+      <app-experiences-item [data]="experience"></app-experiences-item>
+    </mdb-carousel-item>
+  </mdb-carousel>
+</div>

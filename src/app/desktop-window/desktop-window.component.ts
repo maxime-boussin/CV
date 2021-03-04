@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, ElementRef, Input, OnInit} from '@angular/core';
 import {WindowsManagerComponent} from '../windows-manager/windows-manager.component';
 
 @Component({
@@ -9,7 +9,7 @@ import {WindowsManagerComponent} from '../windows-manager/windows-manager.compon
 export class DesktopWindowComponent implements OnInit {
   showBox = true;
   @Input() label: string;
-  constructor(public wmc: WindowsManagerComponent) { }
+  constructor(public wmc: WindowsManagerComponent, private el: ElementRef) { }
 
   ngOnInit(): void {
   }
@@ -17,5 +17,4 @@ export class DesktopWindowComponent implements OnInit {
   close(): void {
     this.wmc.removeWindow(this.label);
   }
-
 }

@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Window } from '../window';
 import {WINDOWS} from '../openedWindows';
+import {Experience} from '../experience';
+import {EXPERIENCES} from '../experiences';
+import {STUDIES} from '../studies';
 
 @Component({
   selector: 'app-windows-manager',
@@ -9,6 +12,8 @@ import {WINDOWS} from '../openedWindows';
 })
 export class WindowsManagerComponent implements OnInit {
   windows: Window[] = WINDOWS;
+  experiences: Experience[] = EXPERIENCES;
+  studies: Experience[] = STUDIES;
   constructor() { }
 
   ngOnInit(): void {

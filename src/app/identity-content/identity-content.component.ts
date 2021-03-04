@@ -8,6 +8,8 @@ import {IdentityPictureComponent} from '../identity-picture/identity-picture.com
 })
 export class IdentityContentComponent implements OnInit {
   @ViewChild(IdentityPictureComponent) pict: IdentityPictureComponent;
+  // 31557600000 = 1 year in ms
+  age = Math.floor((new Date().getTime() - new Date('1997-04-10').getTime()) / 31557600000);
 
   constructor() { }
 

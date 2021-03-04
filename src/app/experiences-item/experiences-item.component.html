@@ -1,0 +1,18 @@
+<table>
+  <tr>
+    <td class="brand">
+      <div class="exp-logo" [ngStyle]="{'background-image' : 'url(../assets/businessLogo/' + data.logo + ')' }"></div>
+    </td>
+    <td>
+      <p class="details"><mat-icon>calendar_today</mat-icon> {{ data.period }}</p>
+      <p class="details"><mat-icon>business</mat-icon> {{ data.business }}</p>
+      <p class="details"><mat-icon>map</mat-icon> {{ data.location }}</p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <div class="divider"></div>
+      <p *ngFor="let item of data.desc">{{ item }}</p>
+    </td>
+  </tr>
+</table>

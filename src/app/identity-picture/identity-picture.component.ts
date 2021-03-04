@@ -49,6 +49,6 @@ export class IdentityPictureComponent implements OnInit {
       else {
         clearInterval(interval);
       }
-    }, 35);
+    }, 25);
   }
 }

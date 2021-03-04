@@ -1,0 +1,61 @@
+<div class="circles-container">
+  <div class="circular text-{{ skill.color }}" *ngFor="let skill of skills; let i = index">
+    <div class="inner">
+    </div>
+    <div class="outer">
+    </div>
+    <div class="skill-label" (click)="showDetails(i)">{{ skill.title }}</div>
+    <div class="numb">{{ skill.percentage }}%</div>
+    <div class="circle">
+      <div class="dot" [ngStyle]="{'animation-play-state' : skill.anim}">
+        <span class="bg-{{ skill.color }}"></span>
+      </div>
+      <div class="bar left">
+        <div class="progress bg-{{ skill.color }}" [ngStyle]="{'animation-play-state' : skill.anim}">
+        </div>
+      </div>
+      <div class="bar right">
+        <div class="progress bg-{{ skill.color }}" [ngStyle]="{'animation-play-state' : skill.anim}">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="skill-details">
+  <mat-tab-group color="accent" dynamicHeight mat-stretch-tabs>
+    <mat-tab *ngFor="let category of skillDetails" label="{{ category.name }}">
+    <mat-tree [dataSource]="category.children" [treeControl]="tc">
+    <mat-tree-node *matTreeNodeDef="let node" matTreeNodeToggle>
+      <li>
+        <div class="flat-node">
+          {{node.name}}
+        </div>
+      </li>
+    </mat-tree-node>
+
+    <mat-nested-tree-node *matTreeNodeDef="let node; when: hasChild">
+      <li>
+        <div class="mat-tree-node">
+          <button mat-icon-button matTreeNodeToggle>
+            <mat-icon>
+              {{tc.isExpanded(node) ? 'expand_more' : 'chevron_right'}}
+            </mat-icon>
+          </button> {{node.name}}
+        </div>
+        <ul [hidden]="!tc.isExpanded(node)">
+          <ng-container matTreeNodeOutlet></ng-container>
+        </ul>
+      </li>
+    </mat-nested-tree-node>
+  </mat-tree>
+    <!--
+      <div *ngFor="let subCat of category.children" class="sub-category">
+        <div>
+          {{ subCat.name }}
+          <div *ngFor="let line of subCat.children" class="skill-line">{{ line.name }}</div>
+        </div>
+      </div>-->
+
+    </mat-tab>
+  </mat-tab-group>
+</div>

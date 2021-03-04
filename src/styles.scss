@@ -1,4 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
-
+@import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+app-experiences-content mdb-carousel .carousel-indicators {
+  display: none !important;
+}
+
+app-experiences-content mdb-carousel .carousel-indicators {
+  display: none !important;
+}
+app-experiences-content mdb-carousel .carousel-control-prev, app-experiences-content mdb-carousel .carousel-control-next {
+  width: 10%;
+}
+app-experiences-content mdb-carousel .carousel-control-prev-icon, app-experiences-content mdb-carousel .carousel-control-next-icon {
+  width: 1.5rem !important;
+  opacity: 0.5;
+}
+
