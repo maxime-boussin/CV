@@ -1,1 +1,26 @@
-<p>projects-content works!</p>
+<table>
+  <tr>
+    <th>
+      Nom
+    </th>
+    <th>
+      Taille
+    </th>
+    <th class="sorted-by">
+      Modifié le
+      <mat-icon aria-hidden="false">arrow_downward</mat-icon>
+    </th>
+  </tr>
+  <tr *ngFor="let repo of repos" (click)="redirect(repo.url)">
+    <td>
+      <mat-icon aria-hidden="false">folder</mat-icon>
+      {{ repo.name }}
+    </td>
+    <td>
+      {{ convertSize(repo.size) }}
+    </td>
+    <td>
+      {{ repo.last_modified.toLocaleDateString() }}
+    </td>
+  </tr>
+</table>
