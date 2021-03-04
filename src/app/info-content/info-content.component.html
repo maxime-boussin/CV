@@ -1,0 +1,4 @@
+<div class="console">
+  <div *ngFor="let line of lines">{{ line }}</div>
+  <div class="end-line">> {{ typing }}<span [ngStyle]="{'opacity': promptOpacity}">|</span></div>
+</div>
