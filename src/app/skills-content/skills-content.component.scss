@@ -4,6 +4,7 @@
   width: min(70vw, 700px);
 }
 .circular{
+  font-family: "Goldman", monospace;
   height: 150px;
   width: 150px;
   position: relative;
@@ -125,24 +126,24 @@
 }
 
 .text-blue {
-  color: #346dd0;
+  color: #1E91D6;
 }
 .bg-blue {
-  background: #346dd0;
+  background: #1E91D6;
 }
 
 .text-green {
-  color: #268326;
+  color: #3fba3b;
 }
 .bg-green {
-  background: #268326;
+  background: #3fba3b;
 }
 
 .text-orange {
-  color: #d6ad1c;
+  color: #E6AF2E;
 }
 .bg-orange {
-  background: #d6ad1c;
+  background: #E6AF2E;
 }
 
 @media (max-width: 600px){
