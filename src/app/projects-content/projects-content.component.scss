@@ -1,0 +1,36 @@
+table {
+  margin: 20px;
+  color: #d0d0d0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  text-align: left;
+  width: min(60vw, 700px);
+  border-radius: 5px;
+  overflow: hidden;
+}
+th {
+  height: 52px;
+  background-color: #7e7e7e;
+  font-weight: normal;
+}
+td {
+  height: 63px;
+  background-color: #535353;
+  border-bottom: 1px solid #4f4f4f;
+}
+td:hover {
+  cursor: pointer;
+}
+th, td {
+  padding-left:10px;
+}
+td mat-icon {
+  transform: scale(1.5);
+  margin: 0 10px;
+  vertical-align: text-bottom;
+}
+.sorted-by {
+  font-weight: bold;
+}
+.sorted-by mat-icon {
+  vertical-align: text-bottom;
+}
