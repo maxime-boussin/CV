@@ -15,7 +15,7 @@ export class DesktopIconComponent implements OnInit {
   }
 
   onClick(): void {
-    this.wmc.addWindow({label: this.iconLabel, zIndex: 0, code: this.iconCode});
+    this.wmc.addWindow({label: this.iconLabel, zIndex: 4, code: this.iconCode});
   }
 
 }

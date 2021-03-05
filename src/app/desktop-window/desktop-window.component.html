@@ -1,4 +1,4 @@
-<div class="box" cdkDragBoundary="body" cdkDrag [cdkDragFreeDragPosition]="{x:35, y:0}" [hidden]="!showBox" [ngStyle]="{ 'z-index' : zIndex }">
+<div class="box" cdkDragBoundary="body" cdkDrag [hidden]="!showBox" [ngStyle]="{ 'z-index' : zIndex }">
   <div class="box-header" cdkDragHandle>
     {{ label }}
     <button class="close-button" (click)="close()"><mat-icon aria-hidden="false">close</mat-icon></button>

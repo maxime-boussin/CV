@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 .circles-container{
   text-align: center;
-  width: min(80vw, 700px);
 }
 .circular{
   font-family: "Goldman", monospace;
@@ -151,9 +150,6 @@
     transform: scale(0.55);
     margin: -28px;
   }
-}
-.skill-details{
-  width: min(80vw, 700px);
 }
 mat-tree {
   max-height: 250px;

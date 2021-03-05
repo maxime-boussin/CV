@@ -1,4 +1,6 @@
 .box {
+  left: max(10vw, calc(50vw - 350px));
+  top: 20vh;
   border: solid 1px #1b1b1b;
   color: rgba(0, 0, 0, 0.87);
   display: inline-flex;

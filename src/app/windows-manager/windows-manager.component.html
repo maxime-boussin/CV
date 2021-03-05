@@ -1,6 +1,6 @@
 <div *ngFor="let window of windows" (mousedown)="toFront(window.label)">
   <app-desktop-window label="{{ window.label }}" [zIndex]="window.zIndex">
-    <div [ngSwitch]="window?.code">
+    <div [ngSwitch]="window?.code" class="window-content">
       <app-identity-content *ngSwitchCase="'account_box'"></app-identity-content>
       <app-experiences-content *ngSwitchCase="'work'" [experiences]="experiences"></app-experiences-content>
       <app-experiences-content *ngSwitchCase="'school'" [experiences]="studies"></app-experiences-content>

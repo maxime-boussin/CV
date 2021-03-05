@@ -1,9 +1,9 @@
 table {
+  width: calc(100% - 40px);
   margin: 20px;
   color: #d0d0d0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
   text-align: left;
-  width: min(80vw, 700px);
   border-radius: 5px;
   overflow: hidden;
 }
