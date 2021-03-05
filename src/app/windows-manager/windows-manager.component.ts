@@ -28,4 +28,13 @@ export class WindowsManagerComponent implements OnInit {
   removeWindow(label: string): void {
     this.windows.splice(this.windows.findIndex(x => x.label === label), 1);
   }
+
+  toFront(label: string): void {
+    this.windows.forEach(window => {
+      window.zIndex = 0;
+      if (window.label === label) {
+        window.zIndex = 3;
+      }
+    });
+  }
 }

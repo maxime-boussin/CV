@@ -1,4 +1,4 @@
-import {Component, ElementRef, Input, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {WindowsManagerComponent} from '../windows-manager/windows-manager.component';
 
 @Component({
@@ -9,7 +9,8 @@ import {WindowsManagerComponent} from '../windows-manager/windows-manager.compon
 export class DesktopWindowComponent implements OnInit {
   showBox = true;
   @Input() label: string;
-  constructor(public wmc: WindowsManagerComponent, private el: ElementRef) { }
+  @Input() zIndex: number;
+  constructor(public wmc: WindowsManagerComponent) { }
 
   ngOnInit(): void {
   }
