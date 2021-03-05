@@ -27,6 +27,7 @@ import {HttpClientModule} from '@angular/common/http';
 import {GithubService} from './github.service';
 import { InfoContentComponent } from './info-content/info-content.component';
 import {MatMenuModule} from '@angular/material/menu';
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 @NgModule({
   declarations: [
@@ -46,19 +47,20 @@ import {MatMenuModule} from '@angular/material/menu';
     ProjectsContentComponent,
     InfoContentComponent
   ],
-  imports: [
-    BrowserModule,
-    HttpClientModule,
-    BrowserAnimationsModule,
-    MatIconModule,
-    MatButtonModule,
-    DragDropModule,
-    MDBBootstrapModule,
-    CommonModule,
-    MatTabsModule,
-    MatTreeModule,
-    MatMenuModule
-  ],
+    imports: [
+        BrowserModule,
+        HttpClientModule,
+        BrowserAnimationsModule,
+        MatIconModule,
+        MatButtonModule,
+        DragDropModule,
+        MDBBootstrapModule,
+        CommonModule,
+        MatTabsModule,
+        MatTreeModule,
+        MatMenuModule,
+        MatTooltipModule
+    ],
   providers: [DatePipe, WindowsManagerComponent, GithubService],
   bootstrap: [AppComponent]
 })

@@ -164,3 +164,15 @@ ul, li {
 .flat-node {
   margin-left: 40px;
 }
+
+.helper {
+  display: block;
+  color: #666;
+  margin: 10px 10px -30px auto;
+  transition: 0.25s linear;
+}
+
+.helper:hover {
+  color: #bbbbbb;
+  cursor: pointer;
+}
