@@ -1,7 +1,7 @@
 body {
   font-family: sans-serif;
-  background-color: #303030;
-  background-image: url("../assets/holo-earth2.png");
+  background-color: var(--background-desktop);
+  background-image: url("../assets/paint-brush.png");
   background-repeat: no-repeat;
   background-size: min(626px, 90%);
   background-attachment: fixed;

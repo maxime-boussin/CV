@@ -22,3 +22,34 @@ button:focus{
   outline: none;
 }
 
+:root {
+  --background-desktop: #e4e4e4;
+  --background-window: #d6d6d6;
+  --background-window-sub: #9b9b9b;
+  --bottom-bar: #b2b2b2;
+  --main-text: #565656;
+  --text-light: #535353;
+  --primary-dark: #006f9f;
+  --primary-medium: #008fcc;
+  --primary-light: #0098da;
+  --table-td: #a8a8a8;
+  --table-th: #bababa;
+  --sl: 80;
+}
+
+AND
+
+ [data-theme="light"] {
+  --background-desktop: #303030;
+  --background-window: #424242;
+  --background-window-sub: #4f4f4f;
+  --bottom-bar: #1b1b1b;
+  --main-text: #bbbbbb;
+  --text-light: #bbbbbb;
+  --primary-dark: #005e00;
+  --primary-medium: #008400;
+  --primary-light: #26ac26;
+  --table-td: #535353;
+  --table-th: #7e7e7e;
+  --sl: 0;
+ }

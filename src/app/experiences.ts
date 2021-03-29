@@ -39,7 +39,7 @@ export const EXPERIENCES: Experience[] = [
     business: 'Biocoop',
     location: 'Rennes',
     logo: 'Biocoop.png',
-    desc: ['Stage de 6 semaines durant lesquelles j\'étais chargé de créer en PHP5 un organigrame générée dynamiquement pour chaque collaborateur avec un export en PDF via FPDF.']
+    desc: ['Stage de 6 semaines durant lesquelles j\'étais chargé de créer en PHP5 un organigramme généré dynamiquement pour chaque collaborateur avec un export en PDF via FPDF.']
   },
   {
     job: 'Technicien informatique',

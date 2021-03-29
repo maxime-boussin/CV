@@ -3,10 +3,10 @@ span {
   font-weight: normal;
   font-size: large;
   line-height: 40%;
-  color: #005e00;
-  text-shadow: 0 0 15px #005e00;
+  color: var(--primary-dark);
+  text-shadow: 0 0 15px var(--primary-dark);
 }
 .glow {
-  color: #26ac26;
-  text-shadow: 0 0 10px #26ac26;
+  color: var(--primary-light);
+  text-shadow: 0 0 10px var(--primary-light);
 }

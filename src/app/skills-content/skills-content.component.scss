@@ -24,7 +24,7 @@
   height: 120px;
   width: 120px;
   margin: -60px 0 0 -60px;
-  background-color: #424242;
+  background-color: var(--background-window);
   border-radius: 100%;
   box-shadow: 0 1px 0 rgba(0,0,0,0.2);
 }
@@ -48,7 +48,7 @@
 }
 .circular .skill-label:hover {
   font-size: 22px;
-  color: #bbb;
+  color: var(--main-text);
   text-shadow: rgb(34, 34, 34) 3px 0 0, rgb(34, 34, 34) 2.83487px 0.981584px 0, rgb(34, 34, 34) 2.35766px 1.85511px 0, rgb(34, 34, 34) 1.62091px 2.52441px 0, rgb(34, 34, 34) 0.705713px 2.91581px 0, rgb(34, 34, 34) -0.287171px 2.98622px 0px, rgb(34, 34, 34) -1.24844px 2.72789px 0px, rgb(34, 34, 34) -2.07227px 2.16926px 0px, rgb(34, 34, 34) -2.66798px 1.37182px 0px, rgb(34, 34, 34) -2.96998px 0.42336px 0px, rgb(34, 34, 34) -2.94502px -0.571704px 0px, rgb(34, 34, 34) -2.59586px -1.50383px 0px, rgb(34, 34, 34) -1.96093px -2.27041px 0px, rgb(34, 34, 34) -1.11013px -2.78704px 0px, rgb(34, 34, 34) -0.137119px -2.99686px 0px, rgb(34, 34, 34) 0.850987px -2.87677px 0px, rgb(34, 34, 34) 1.74541px -2.43999px 0px, rgb(34, 34, 34) 2.44769px -1.73459px 0px, rgb(34, 34, 34) 2.88051px -0.838247px 0px;
   cursor: pointer;
 }
@@ -59,7 +59,7 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  background: #4f4f4f;
+  background: var(--background-window-sub);
   -webkit-border-radius: 100%;
   clip: rect(0px, 150px, 150px, 75px);
 }
@@ -173,6 +173,6 @@ ul, li {
 }
 
 .helper:hover {
-  color: #bbbbbb;
+  color: var(--main-text);
   cursor: pointer;
 }

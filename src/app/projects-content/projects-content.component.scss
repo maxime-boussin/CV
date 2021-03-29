@@ -1,7 +1,7 @@
 table {
   width: calc(100% - 40px);
   margin: 20px;
-  color: #d0d0d0;
+  color: var(--text-light);
   font-family: Roboto, "Helvetica Neue", sans-serif;
   text-align: left;
   border-radius: 5px;
@@ -9,13 +9,13 @@ table {
 }
 th {
   height: 52px;
-  background-color: #7e7e7e;
+  background-color: var(--table-th);
   font-weight: normal;
 }
 td {
   height: 63px;
-  background-color: #535353;
-  border-bottom: 1px solid #4f4f4f;
+  background-color: var(--table-td);
+  border-bottom: 1px solid var(--background-window-sub);
 }
 td:hover {
   cursor: pointer;
